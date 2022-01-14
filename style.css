@@ -1,0 +1,47 @@
+.kite {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: green;
+  transform: rotate(45deg);
+  margin: 0px auto;
+  margin-top: 50px;
+}
+.kite:before, .kite:after {
+  content: '';
+  position: absolute;
+}
+.kite:before {
+  top: 50%;
+  left: -20.5%;
+  width: 141%;
+  margin-top:-1px;
+  border-top: 2px solid #000;
+  transform: rotate(45deg);
+}
+.kite:after {
+  top: 0;
+  left: 0;
+  width: 198px;
+  height: 198px;
+  border-top-left-radius: 100%;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+}
+.tail {
+  position: absolute;
+  top: 199px;
+  left: 199px;
+  width:60px;
+  height:60px;
+  overflow:hidden;
+}
+.tail:before{
+  content:'';
+  display:block;
+  width:141%;
+  height:100%;
+  background:#000;
+  transform-origin:0 100%;
+  transform:rotate(-45deg);
+}
